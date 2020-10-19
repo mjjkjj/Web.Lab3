@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif; // что делает font-family?
+    font-size: 14px;
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color:#40DABA;
+}
+
+
+/* Container
+===================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* Header
+===================*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute; // что будет, если поменять значение на fixed?
+    top: 0;
+    left: 0;
+    z-index: 1000; // какие функции выполняет?
+}
+
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+
+    border-bottom: 1px solid #515369; // за что отвечает данная строка?
+}
+
+
+/* Nav
+===================*/
+
+.nav {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;  // что делаает данный параметр?
+    transition: opacity .1s linear; // что будет, если заменить значение на .10s?
+}
+
+
+
+
+/* Intro
+===================*/
+.intro {
+    height: 750px;
+    padding-top: 20%;
+    background: #31344e url("img/intro-bg.jpg") center no-repeat;
+    background-size: cover; // что означает параметр cover?
+
+}
+
+.container2 {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    background: red;
+}
+
+#column-1,
+#column-2,
+#column-3 {
+    float: left;
+    min-height: 100%;
+}
+
+
+#column-1 {
+    width: 50px;
+    background: red;
+}
+
+
+#column-2 {
+    width: 90px;
+    background: green;
+}
+
+#column-3 {
+    width: 50px;
+    background: blue;
+}
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.intro__title {
+    margin: 10px 35px 25px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    line-height: 1.1;
+    color: red;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.intro__subtitle {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
+/* Button
+===================*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none; // какие функции выполняет  text-decoration?
+    transition: background .1s linear;
+}
+
+.btn--red {
+    background-color: #e84545;
+}
+
+.btn--red:hover { // зачем используется :hover
+    background-color: #dd3434;
+}
+
+.block1 {
+  width: 32%;
+  height: 400px;
+  padding: 15px;
+  float: left;
+  text-align: center;
+  background: linear-gradient(35deg,black, red, purple);
+  border-width: 3px;
+  border-color: red;
+  border-style: solid;
+  border-radius: 10px;
+}
+.block2 {
+  width: 32%;
+  height: 400px;
+  padding: 15px;
+  text-align: center;
+  float: right;
+  background-image: url(https://kyiv.comments.ua/img/publications/880x586/l61Cou3UnUWhjSdMn6uXir7j7r7BLA0s.jpg);
+  background-position: left;
+  border-width: 4px 3px 8px 1px;
+  border-color: yellow green black red;
+  border-style: solid;
+
+}
+.block3 {
+  width: 30%;
+  height: 400px;
+  padding: 15px;
+  margin:auto;
+  text-align: center;
+  background-image: url(https://cdn-3.heroine.ru/7QvVKOqMOyPuDp4noeh27VB0QxgLbCxsd0b9Dzvs9MM/rs:fill:600:600:0/g:ce:0:0/c:0:0/aHR0cHM6Ly9oZXJvaW5lLnJ1L3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE4LzAxLzIzL9C80LjQsNGC0Y7RgNCw0YXQvtC70L7QtC5qcGc.jpg), url(https://a2goos.com/data_images/galleryes/bmw-600/bmw-600-12.jpg);
+  background-position: left top, bottom left;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 100px 200px;
+  background-attachment: scroll, fixed;
+}
+.containerr {
+  width: 1835px;
+     height: 350px;
+     background: white;
+     display: flex;
+     padding: 15px;
+   justify-content: center;
+   margin: auto;
+
+}
